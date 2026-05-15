@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#2C4A3E">
+<title>Malasia &amp; Singapur · Iria e Iñaqui · Itinerario operativo</title>
+<meta name="description" content="Itinerario operativo del viaje a Malasia y Singapur (24 sept – 26 oct 2026) de Iria e Iñaqui. PWA offline con timeline, mapa, documentos, conversor y checklist.">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="assets/icons/icon-192.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@300;400;500;600&display=swap">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<header class="topbar" data-testid="topbar">
+  <h1>Malasia &amp; Singapur · <em>Iria e Iñaqui</em></h1>
+  <button id="theme-toggle" class="icon-btn" aria-label="Cambiar tema" data-testid="theme-toggle-btn"></button>
+</header>
+
+<nav class="tabs" role="tablist" data-testid="main-tabs">
+  <button class="tab" data-view="itinerario" role="tab" aria-selected="true" data-testid="tab-itinerario">Itinerario</button>
+  <button class="tab" data-view="mapa" role="tab" aria-selected="false" data-testid="tab-mapa">Mapa</button>
+  <button class="tab" data-view="buscar" role="tab" aria-selected="false" data-testid="tab-buscar">Buscar</button>
+  <button class="tab" data-view="herramientas" role="tab" aria-selected="false" data-testid="tab-herramientas">Herramientas</button>
+  <button class="tab" data-view="frases" role="tab" aria-selected="false" data-testid="tab-frases">Frases</button>
+</nav>
+
+<main>
+  <!-- ITINERARIO -->
+  <section id="view-itinerario" class="view active" data-testid="view-itinerario">
+    <div id="hero-today" class="hero-today" data-testid="hero-today"></div>
+    <div id="day-list" class="day-list" data-testid="day-list"></div>
+    <div id="day-detail" class="day-detail" data-testid="day-detail"></div>
+  </section>
+
+  <!-- MAPA -->
+  <section id="view-mapa" class="view" data-testid="view-mapa">
+    <h2 style="font-family:var(--font-display);color:var(--forest);margin-bottom:14px;font-weight:500">Mapa del viaje</h2>
+    <p style="color:var(--mist);margin-bottom:16px;font-size:.92rem">Todos los puntos del itinerario: ✈️ aeropuertos, ⛴️ puertos, 🏝️ islas, 🏨 hoteles. La línea dorada conecta los alojamientos.</p>
+    <div id="map" data-testid="map-container"></div>
+  </section>
+
+  <!-- BUSCAR -->
+  <section id="view-buscar" class="view" data-testid="view-buscar">
+    <input id="search-input" class="search-input" type="search" placeholder="Buscar: Penang, ferry, MH1336, hotel..." aria-label="Buscar" data-testid="search-input">
+    <div id="search-results" class="search-results" data-testid="search-results"></div>
+  </section>
+
+  <!-- HERRAMIENTAS -->
+  <section id="view-herramientas" class="view" data-testid="view-herramientas">
+    <div class="tools-grid">
+
+      <div class="tool" data-testid="tool-converter">
+        <h3>Conversor de divisas</h3>
+        <div class="row">
+          <input id="conv-amt" type="number" inputmode="decimal" value="100" min="0" step="1" data-testid="conv-amt">
+          <select id="conv-from" data-testid="conv-from">
+            <option value="EUR">EUR</option>
+            <option value="MYR" selected>MYR</option>
+            <option value="SGD">SGD</option>
+          </select>
+        </div>
+        <div class="row">
+          <span style="align-self:center;color:var(--mist);font-size:.9rem">a</span>
+          <select id="conv-to" data-testid="conv-to">
+            <option value="EUR" selected>EUR</option>
+            <option value="MYR">MYR</option>
+            <option value="SGD">SGD</option>
+          </select>
+        </div>
+        <div id="conv-result" class="conv-result" data-testid="conv-result">—</div>
+        <p style="color:var(--mist);font-size:.78rem;margin-top:8px">Tasas aprox.: 1 € = 5.05 MYR · 1 € = 1.45 SGD</p>
+      </div>
+
+      <div class="tool" data-testid="tool-expenses">
+        <h3>Gastos del viaje</h3>
+        <div class="row">
+          <input id="exp-desc" type="text" placeholder="Descripción" data-testid="exp-desc">
+        </div>
+        <div class="row">
+          <input id="exp-amt" type="number" inputmode="decimal" placeholder="Importe" step="0.01" data-testid="exp-amt">
+          <select id="exp-cur" data-testid="exp-cur">
+            <option value="MYR">MYR</option>
+            <option value="SGD">SGD</option>
+            <option value="EUR">EUR</option>
+          </select>
+          <button id="exp-add" class="primary" data-testid="exp-add-btn">Añadir</button>
+        </div>
+        <div id="exp-list" class="exp-list" data-testid="exp-list"></div>
+        <div class="exp-total"><span>Total convertido</span><span id="exp-total" data-testid="exp-total">0.00 €</span></div>
+      </div>
+
+      <div class="tool" data-testid="tool-checklist" style="grid-column:1/-1">
+        <h3>Checklist del viaje</h3>
+        <p style="color:var(--mist);font-size:.88rem;margin-bottom:10px">Tus marcas se guardan automáticamente en este dispositivo.</p>
+        <div id="checklist-wrap" data-testid="checklist-wrap"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FRASES -->
+  <section id="view-frases" class="view" data-testid="view-frases">
+    <h2 style="font-family:var(--font-display);color:var(--forest);margin-bottom:6px;font-weight:500">Frases útiles</h2>
+    <p style="color:var(--mist);margin-bottom:20px;font-size:.92rem">Español → Malayo (Bahasa Melayu) → Inglés</p>
+    <div id="phrases-wrap" data-testid="phrases-wrap"></div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <p>Hecho con ✦ para <em>Iria e Iñaqui</em></p>
+  <p style="margin-top:6px;font-size:.78rem">Reserva Etihad <strong>8BFUJH</strong> · 32 días · 25 sept → 26 oct 2026</p>
+</footer>
+
+<div id="toast" class="toast" role="status" aria-live="polite" data-testid="toast"></div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

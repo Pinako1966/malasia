@@ -1,0 +1,238 @@
+{
+  "viaje": {
+    "titulo": "Malasia & Singapur · Iria e Iñaqui",
+    "fecha_inicio": "2026-09-24",
+    "fecha_fin": "2026-10-26",
+    "total_dias": 32,
+    "pnr_principal": "8BFUJH",
+    "pasajeros": ["Iria Feijoo Regueiro", "Ignacio González"],
+    "moneda_base": "EUR",
+    "monedas_destino": ["MYR", "SGD"]
+  },
+  "lugares": {
+    "MAD": {"nombre": "Madrid · Aeropuerto Adolfo Suárez Barajas T4", "lat": 40.4983, "lng": -3.5676, "tipo": "aeropuerto"},
+    "AUH": {"nombre": "Abu Dhabi · Zayed International T A", "lat": 24.4330, "lng": 54.6511, "tipo": "aeropuerto"},
+    "KUL": {"nombre": "Kuala Lumpur · KLIA T1", "lat": 2.7456, "lng": 101.7099, "tipo": "aeropuerto"},
+    "TGG": {"nombre": "Kuala Terengganu · Sultan Mahmud", "lat": 5.3826, "lng": 103.1029, "tipo": "aeropuerto"},
+    "KBR": {"nombre": "Kota Bharu · Sultan Ismail Petra", "lat": 6.1668, "lng": 102.2933, "tipo": "aeropuerto"},
+    "LGK": {"nombre": "Langkawi International", "lat": 6.3298, "lng": 99.7274, "tipo": "aeropuerto"},
+    "PEN": {"nombre": "Penang International", "lat": 5.2972, "lng": 100.2769, "tipo": "aeropuerto"},
+    "SIN": {"nombre": "Singapur · Changi T2", "lat": 1.3592, "lng": 103.9894, "tipo": "aeropuerto"},
+    "merang_jetty": {"nombre": "Merang Jetty (Vigourmarine)", "lat": 5.5235, "lng": 102.9525, "tipo": "puerto"},
+    "redang": {"nombre": "Pulau Redang", "lat": 5.7833, "lng": 103.0083, "tipo": "isla"},
+    "perhentian": {"nombre": "Pulau Perhentian Kecil · Petani Beach", "lat": 5.9176, "lng": 102.7176, "tipo": "isla"},
+    "villa_wanie": {"nombre": "Villa Wanie Inn", "lat": 5.5252, "lng": 102.9477, "direccion": "Lot 60082 Simpang 3 Merang, Setiu 21010", "tipo": "hotel"},
+    "laguna_redang": {"nombre": "Laguna Redang Island Resort", "lat": 5.7836, "lng": 103.0089, "direccion": "Pasir Panjang, Pulau Redang", "tipo": "hotel"},
+    "alunan_resort": {"nombre": "Alunan Resort", "lat": 5.9181, "lng": 102.7172, "direccion": "Petani Beach, Perhentian Kecil, Besut 22300", "tipo": "hotel"},
+    "santa_grand_kl": {"nombre": "Santa Grand Signature Kuala Lumpur", "lat": 3.1574, "lng": 101.7100, "direccion": "No. 36, Jalan Ampang, 50450 Kuala Lumpur", "tipo": "hotel"},
+    "avillion_cameron": {"nombre": "Avillion Cameron Highlands", "lat": 4.4699, "lng": 101.3812, "direccion": "Tanah Rata, Cameron Highlands, Pahang", "tipo": "hotel"},
+    "muntri_mews": {"nombre": "Muntri Mews", "lat": 5.4188, "lng": 100.3372, "direccion": "77 Muntri Street, 10200 George Town, Penang", "tipo": "hotel"},
+    "macalisterz_22": {"nombre": "22 Macalisterz by MyKey", "lat": 5.4150, "lng": 100.3273, "direccion": "22 Jalan Macalister, 10400 George Town, Penang", "tipo": "hotel"},
+    "pelangi_beach": {"nombre": "Pelangi Beach Resort & Spa", "lat": 6.3010, "lng": 99.7250, "direccion": "Pantai Cenang, 07000 Langkawi", "tipo": "hotel"},
+    "liu_men_melaka": {"nombre": "Liu Men Melaka", "lat": 2.1956, "lng": 102.2477, "direccion": "Lorong Hang Jebat, Melaka", "tipo": "hotel"},
+    "jen_singapur": {"nombre": "JEN Singapore Orchardgateway by Shangri-La", "lat": 1.3010, "lng": 103.8390, "direccion": "277 Orchard Road, Singapur 238858", "tipo": "hotel"}
+  },
+  "documentos": {
+    "etihad_iria": "assets/pdfs/etihad_iria_8bfujh.pdf",
+    "etihad_ignacio": "assets/pdfs/etihad_ignacio_8bfujh.pdf",
+    "mh1336_iria": "assets/pdfs/malaysia_mh1336_iria_kul_tgg.pdf",
+    "mh1336_ignacio": "assets/pdfs/malaysia_mh1336_ignacio_kul_tgg.pdf",
+    "mh1397_iria": "assets/pdfs/malaysia_mh1397_iria_kbr_kul.pdf",
+    "mh1397_ignacio": "assets/pdfs/malaysia_mh1397_ignacio_kbr_kul.pdf",
+    "mh1433_iria": "assets/pdfs/malaysia_mh1433_iria_lgk_kul.pdf",
+    "mh1433_ignacio": "assets/pdfs/malaysia_mh1433_ignacio_lgk_kul.pdf",
+    "airasia_pen_lgk": "assets/pdfs/airasia_itinerary_siez5x_penang_langkawi.pdf",
+    "airasia_factura": "assets/pdfs/airasia_invoice_siez5x.pdf",
+    "transfer_tgg_merang": "assets/pdfs/transfer_tgg_merang_jetty.pdf",
+    "ferry_merang_redang": "assets/pdfs/ferry_merang_redang.pdf",
+    "ferry_redang_perhentian": "assets/pdfs/ferry_redang_perhentian.pdf",
+    "hotel_villa_wanie": "assets/pdfs/hotel_merang_villa_wanie_inn_confirmacion.pdf",
+    "hotel_laguna": "assets/pdfs/reserva_laguna_redang.pdf",
+    "hotel_alunan": "assets/pdfs/hotel_perhentian_alunan_resort_checkin.pdf",
+    "hotel_santa_grand": "assets/pdfs/hotel_kuala_lumpur_santa_grand_signature_checkin.pdf",
+    "hotel_avillion": "assets/pdfs/hotel_cameron_highlands_avillion_checkin.pdf",
+    "hotel_muntri": "assets/pdfs/hotel_penang_muntri_mews_checkin.pdf",
+    "hotel_macalisterz": "assets/pdfs/hotel_penang_22_macalisterz_checkin.pdf",
+    "hotel_pelangi": "assets/pdfs/hotel_langkawi_pelangi_beach_resort_checkin.pdf",
+    "hotel_liu_men": "assets/pdfs/hotel_melaka_liu_men_melaka_checkin.pdf",
+    "hotel_jen": "assets/pdfs/hotel_singapur_jen_orchardgateway_confirmacion.pdf",
+    "daytrip_kl_tanah": "assets/pdfs/daytrip_kuala_lumpur_tanah_rata_EM55LGEE.pdf",
+    "daytrip_tanah_george": "assets/pdfs/daytrip_tanah_rata_george_town_2XPAY1F5.pdf",
+    "daytrip_klia_melaka": "assets/pdfs/daytrip_klia_melaka_6PD695Q3.pdf"
+  },
+  "dias": [
+    {
+      "n": 0, "fecha": "2026-09-24", "titulo": "Madrid → Abu Dhabi → Kuala Lumpur", "ciudad": "vuelo", "header": "header_kl.jpg",
+      "resumen": "Día de salida. Vuelo nocturno con escala en Abu Dhabi.",
+      "eventos": [
+        {"hora": "10:45", "tipo": "vuelo", "texto": "EY102 MAD→AUH · T4 Barajas · llegada AUH 19:40", "doc": "etihad_iria"},
+        {"hora": "21:00", "tipo": "vuelo", "texto": "EY488 AUH→KUL · Terminal A · llegada 25 sept 08:25 hora local", "doc": "etihad_ignacio"}
+      ],
+      "consejos": ["Comer ligero antes de embarcar", "Lleva calcetines y antifaz para el vuelo nocturno", "Tarjeta SIM Malasia o eSIM activada antes de aterrizar"]
+    },
+    {
+      "n": 1, "fecha": "2026-09-25", "titulo": "Llegada Malasia · KL → Terengganu → Merang", "ciudad": "Merang", "header": "header_islas.jpg",
+      "resumen": "Día intenso de tránsito. Llegada al amanecer, vuelo doméstico por la tarde y transfer al pueblo de Merang para dormir cerca del embarcadero.",
+      "hotel": "villa_wanie",
+      "eventos": [
+        {"hora": "08:25", "tipo": "llegada", "texto": "Llegada KUL T1. Recoger maletas, sellar pasaporte, comer en el aeropuerto", "doc": "etihad_iria"},
+        {"hora": "16:45", "tipo": "vuelo", "texto": "MH1336 KUL→TGG · Terminal 1 · asiento 06E · llegada 17:45 · PNR EK4K32", "doc": "mh1336_iria"},
+        {"hora": "19:00", "tipo": "transfer", "texto": "Transfer privado TGG → Merang Jetty (63 €) · res. 554510", "doc": "transfer_tgg_merang"},
+        {"hora": "21:00", "tipo": "checkin", "texto": "Check-in Villa Wanie Inn · res. 6000799334", "doc": "hotel_villa_wanie"}
+      ],
+      "consejos": ["Comprar agua y snacks en KLIA, en Merang hay muy poca opción", "Llevar moneda local (MYR) ya cambiada del aeropuerto", "Confirmar hora de ferry del día siguiente con recepción al llegar"]
+    },
+    {
+      "n": 2, "fecha": "2026-09-26", "titulo": "Merang → Pulau Redang", "ciudad": "Redang", "header": "header_islas.jpg",
+      "resumen": "Ferry matutino a Redang. Tarde de relax y primer snorkel.",
+      "hotel": "laguna_redang",
+      "eventos": [
+        {"hora": "08:30", "tipo": "transfer", "texto": "Salida hacia Merang Jetty (5 min)"},
+        {"hora": "09:30", "tipo": "ferry", "texto": "Ferry Merang Jetty → Pulau Redang · res. 637179", "doc": "ferry_merang_redang"},
+        {"hora": "11:00", "tipo": "checkin", "texto": "Check-in Laguna Redang Island Resort · res. 9PYCSU", "doc": "hotel_laguna"}
+      ],
+      "consejos": ["Llevar crema solar reef-safe", "El resort incluye comidas: confirmar horarios", "Reserva snorkel trip para mañana en recepción"]
+    },
+    {
+      "n": 3, "fecha": "2026-09-27", "titulo": "Día completo en Redang · snorkel y playa", "ciudad": "Redang", "header": "header_islas.jpg",
+      "resumen": "Marine park, Long Beach, snorkel en arrecifes de la isla.",
+      "hotel": "laguna_redang",
+      "eventos": [
+        {"hora": "09:00", "tipo": "actividad", "texto": "Snorkel trip al Marine Park (organizado por resort)"},
+        {"hora": "15:00", "tipo": "actividad", "texto": "Long Beach y atardecer en la playa"}
+      ],
+      "consejos": ["Hidratación constante: humedad alta", "No tocar coral", "Cargar la cámara/GoPro de noche, conexión a veces irregular"]
+    },
+    {
+      "n": 4, "fecha": "2026-09-28", "titulo": "Redang → Perhentian Kecil", "ciudad": "Perhentian", "header": "header_islas.jpg",
+      "resumen": "Mañana relajada antes del ferry. Llegada a Perhentian para 5 noches en Alunan.",
+      "hotel": "alunan_resort",
+      "eventos": [
+        {"hora": "10:30", "tipo": "ferry", "texto": "Ferry Redang → Perhentian · res. 509589", "doc": "ferry_redang_perhentian"},
+        {"hora": "13:00", "tipo": "checkin", "texto": "Check-in Alunan Resort · Petani Beach · res. 1598738055641416 (todas las comidas y traslados en barco incluidos)", "doc": "hotel_alunan"}
+      ],
+      "consejos": ["Cash en MYR: en Perhentian no hay cajeros operativos", "Llevar zapatillas de agua (corales en la orilla)", "Linterna frontal: caminos sin alumbrado por la noche"]
+    },
+    {"n": 5, "fecha": "2026-09-29", "titulo": "Perhentian · día 2", "ciudad": "Perhentian", "header": "header_islas.jpg", "hotel": "alunan_resort", "resumen": "Snorkel desde la playa. Posible salida en barco al Coral Reef Point.", "eventos": [{"hora": "—", "tipo": "libre", "texto": "Día libre: snorkel, lectura, hamaca"}], "consejos": ["Pregunta en recepción por la salida de tortugas en Turtle Beach", "Restaurante 'Ewan' (vegetariano) recomendable para cenar"]},
+    {"n": 6, "fecha": "2026-09-30", "titulo": "Perhentian · día 3", "ciudad": "Perhentian", "header": "header_islas.jpg", "hotel": "alunan_resort", "resumen": "Excursión completa: tour de snorkel por la isla (Shark Point, Romantic Beach, Light House).", "eventos": [{"hora": "09:30", "tipo": "actividad", "texto": "Snorkel tour completo (4-5 horas)"}], "consejos": ["Llevar agua y barrita energética", "Cremas resistentes al agua"]},
+    {"n": 7, "fecha": "2026-10-01", "titulo": "Perhentian · día 4", "ciudad": "Perhentian", "header": "header_islas.jpg", "hotel": "alunan_resort", "resumen": "Travesía a pie a Long Beach (Perhentian Kecil norte). Bares y ambiente joven.", "eventos": [{"hora": "—", "tipo": "libre", "texto": "Día libre. Posibilidad de paddle / kayak"}], "consejos": ["Long Beach son 30 min andando por sendero", "Cuidado al volver de noche por el sendero"]},
+    {"n": 8, "fecha": "2026-10-02", "titulo": "Perhentian · día 5", "ciudad": "Perhentian", "header": "header_islas.jpg", "hotel": "alunan_resort", "resumen": "Último día completo en islas. Buen momento para masaje o curso introductorio de buceo.", "eventos": [{"hora": "—", "tipo": "libre", "texto": "Día libre"}], "consejos": ["Confirmar barco de salida mañana con recepción", "Cargar todos los dispositivos esta noche"]},
+    {
+      "n": 9, "fecha": "2026-10-03", "titulo": "Perhentian → Kota Bharu → Kuala Lumpur", "ciudad": "Kuala Lumpur", "header": "header_kl.jpg",
+      "resumen": "Día de tránsito largo. Salida en barco, traslado terrestre a aeropuerto de Kota Bharu, vuelo doméstico a KL.",
+      "hotel": "santa_grand_kl",
+      "eventos": [
+        {"hora": "11:00", "tipo": "transfer", "texto": "Barco Alunan → Kuala Besut Jetty (incluido en hotel)", "doc": "hotel_alunan"},
+        {"hora": "13:00", "tipo": "transfer", "texto": "Traslado terrestre Kuala Besut → Kota Bharu aeropuerto (KBR)"},
+        {"hora": "18:25", "tipo": "vuelo", "texto": "MH1397 KBR→KUL · llegada 19:40 · PNR EKFFE5", "doc": "mh1397_iria"},
+        {"hora": "22:00", "tipo": "checkin", "texto": "Check-in Santa Grand Signature KL · Jalan Ampang · res. 1598738056516025", "doc": "hotel_santa_grand"}
+      ],
+      "consejos": ["Mucho margen entre barco y vuelo: no apurar", "Comer en KBR antes del vuelo (poca opción a bordo)", "El barrio Bukit Bintang queda a 15 min en Grab del hotel"]
+    },
+    {"n": 10, "fecha": "2026-10-04", "titulo": "KL · Torres Petronas + Bukit Bintang", "ciudad": "Kuala Lumpur", "header": "header_kl.jpg", "hotel": "santa_grand_kl", "resumen": "Primer día completo en la capital. Torres Petronas (entrada online), parque KLCC y barrio comercial.", "eventos": [{"hora": "10:00", "tipo": "visita", "texto": "Petronas Twin Towers + Skybridge (reservar entrada antes)"}, {"hora": "14:00", "tipo": "comida", "texto": "Comida en Jalan Alor (street food)"}, {"hora": "18:00", "tipo": "visita", "texto": "Atardecer Skybar Heli Lounge Bar"}], "consejos": ["Petronas: entradas con 1 semana de antelación", "Grab es más barato y fiable que taxis"]},
+    {"n": 11, "fecha": "2026-10-05", "titulo": "KL · Batu Caves + Chinatown", "ciudad": "Kuala Lumpur", "header": "header_kl.jpg", "hotel": "santa_grand_kl", "resumen": "Excursión matutina a Batu Caves (templo hindú en cueva). Tarde por Chinatown y Petaling Street.", "eventos": [{"hora": "08:30", "tipo": "visita", "texto": "Batu Caves (tren KTM Komuter desde KL Sentral, 30 min)"}, {"hora": "13:00", "tipo": "comida", "texto": "Comida en Madam Kwan's o Lot 10 Hutong"}, {"hora": "16:00", "tipo": "visita", "texto": "Chinatown · Petaling Street · Sri Mahamariamman Temple"}], "consejos": ["Vestir hombros y rodillas cubiertas para Batu Caves", "Petaling Street: regatear precios"]},
+    {"n": 12, "fecha": "2026-10-06", "titulo": "KL · Islamic Arts Museum + Lake Gardens", "ciudad": "Kuala Lumpur", "header": "header_kl.jpg", "hotel": "santa_grand_kl", "resumen": "Día cultural. Uno de los mejores museos de arte islámico del mundo. Tarde de jardines y pájaros.", "eventos": [{"hora": "10:00", "tipo": "visita", "texto": "Islamic Arts Museum Malaysia (imprescindible)"}, {"hora": "14:00", "tipo": "visita", "texto": "KL Bird Park (el aviario más grande del mundo)"}, {"hora": "18:00", "tipo": "visita", "texto": "Mezquita Nacional (Masjid Negara)"}], "consejos": ["Bird Park: comprar entrada online", "Vestir respetuosamente para la mezquita"]},
+    {"n": 13, "fecha": "2026-10-07", "titulo": "KL · Mercados + descanso", "ciudad": "Kuala Lumpur", "header": "header_kl.jpg", "hotel": "santa_grand_kl", "resumen": "Día más relajado. Central Market, Merdeka Square, descanso antes del traslado a Cameron Highlands.", "eventos": [{"hora": "10:00", "tipo": "visita", "texto": "Central Market + Kasturi Walk (artesanía)"}, {"hora": "14:00", "tipo": "visita", "texto": "Merdeka Square + Sultan Abdul Samad Building"}, {"hora": "19:00", "tipo": "comida", "texto": "Cena Bukit Bintang (Jalan Alor)"}], "consejos": ["Preparar maleta ligera para Cameron: clima fresco (15-22 °C)", "Llevar chaqueta para las noches en montaña"]},
+    {
+      "n": 14, "fecha": "2026-10-08", "titulo": "KL → Tanah Rata · Cameron Highlands", "ciudad": "Cameron Highlands", "header": "header_cameron.jpg",
+      "resumen": "Traslado privado a las tierras altas. Plantaciones de té, fresas y aire fresco.",
+      "hotel": "avillion_cameron",
+      "eventos": [
+        {"hora": "09:00", "tipo": "transfer", "texto": "Daytrip privado KL → Tanah Rata (sedan, 3h) · res. EM55LGEE · 151 USD prepagados", "doc": "daytrip_kl_tanah"},
+        {"hora": "12:00", "tipo": "llegada", "texto": "Llegada Tanah Rata"},
+        {"hora": "15:00", "tipo": "visita", "texto": "BOH Tea Plantation Sungai Palas (té y panorámica)"}
+      ],
+      "consejos": ["Lleva sudadera/forro polar", "Cameron noches a 12-15 °C", "Pagar entradas BOH en efectivo MYR"]
+    },
+    {"n": 15, "fecha": "2026-10-09", "titulo": "Cameron · Mossy Forest + Strawberry Park", "ciudad": "Cameron Highlands", "header": "header_cameron.jpg", "hotel": "avillion_cameron", "resumen": "Trek ligero por el Mossy Forest, visita a granja de fresas y mercado nocturno.", "eventos": [{"hora": "09:00", "tipo": "excursion", "texto": "Tour Mossy Forest + BOH (organizado en hotel)"}, {"hora": "15:00", "tipo": "visita", "texto": "Big Red Strawberry Farm"}, {"hora": "19:00", "tipo": "mercado", "texto": "Brinchang Night Market (jueves)"}], "consejos": ["Calzado con suela antideslizante para Mossy Forest", "Sombrero y agua para la subida"]},
+    {
+      "n": 16, "fecha": "2026-10-10", "titulo": "Tanah Rata → George Town · Penang", "ciudad": "Penang", "header": "header_penang.jpg",
+      "resumen": "Traslado largo a Penang (3,5-4 h). Llegada a George Town, ciudad colonial Patrimonio UNESCO.",
+      "hotel": "muntri_mews",
+      "eventos": [
+        {"hora": "09:00", "tipo": "transfer", "texto": "Daytrip privado Tanah Rata → George Town (sedan) · res. 2XPAY1F5 · 173 USD prepagados", "doc": "daytrip_tanah_george"},
+        {"hora": "13:00", "tipo": "llegada", "texto": "Llegada George Town"},
+        {"hora": "15:00", "tipo": "checkin", "texto": "Check-in Muntri Mews · 77 Muntri Street"},
+        {"hora": "18:00", "tipo": "comida", "texto": "Cena en Kim Haus Lounge (estilo peranakan moderno)"}
+      ],
+      "consejos": ["Muntri Street está en pleno casco colonial", "Caminar es la mejor forma de descubrir George Town"]
+    },
+    {"n": 17, "fecha": "2026-10-11", "titulo": "George Town · murales + comida", "ciudad": "Penang", "header": "header_penang.jpg", "hotel": "muntri_mews", "resumen": "Ruta del street art (Ernest Zacharevic), Clan Jetties y la mítica comida de Penang.", "eventos": [{"hora": "09:30", "tipo": "visita", "texto": "Ruta de murales + Armenian Street"}, {"hora": "12:00", "tipo": "comida", "texto": "Comida en Joo Hooi Café (laksa, cendol, char kway teow)"}, {"hora": "15:00", "tipo": "visita", "texto": "Chew Jetty (palafitos de clanes chinos)"}, {"hora": "18:00", "tipo": "visita", "texto": "Esplanade al atardecer"}], "consejos": ["La comida callejera de Penang es la mejor del país", "Probar Asam Laksa y Char Kway Teow"]},
+    {
+      "n": 18, "fecha": "2026-10-12", "titulo": "Penang · cambio de hotel + Penang Hill", "ciudad": "Penang", "header": "header_penang.jpg",
+      "resumen": "Mañana de cambio a 22 Macalisterz. Tarde en Penang Hill (funicular y vistas).",
+      "hotel": "macalisterz_22",
+      "eventos": [
+        {"hora": "12:00", "tipo": "checkout", "texto": "Check-out Muntri Mews"},
+        {"hora": "14:00", "tipo": "checkin", "texto": "Check-in 22 Macalisterz · Jalan Macalister · res. 1598738084220449", "doc": "hotel_macalisterz"},
+        {"hora": "16:00", "tipo": "visita", "texto": "Penang Hill (funicular 'The Habitat')"}
+      ],
+      "consejos": ["Funicular: comprar fast-pass online", "Llevar chubasquero ligero (Penang Hill llueve a menudo)"]
+    },
+    {"n": 19, "fecha": "2026-10-13", "titulo": "Penang · Kek Lok Si + playa Batu Ferringhi", "ciudad": "Penang", "header": "header_penang.jpg", "hotel": "macalisterz_22", "resumen": "Mañana al gran templo Kek Lok Si (el más grande del SE asiático). Tarde de playa en Batu Ferringhi.", "eventos": [{"hora": "09:30", "tipo": "visita", "texto": "Kek Lok Si Temple (Air Itam)"}, {"hora": "14:00", "tipo": "playa", "texto": "Batu Ferringhi · descanso de playa"}, {"hora": "19:00", "tipo": "mercado", "texto": "Batu Ferringhi Night Market"}], "consejos": ["Kek Lok Si: dress code respetuoso", "Batu Ferringhi: mar más adecuado que las playas urbanas"]},
+    {
+      "n": 20, "fecha": "2026-10-14", "titulo": "Penang → Langkawi", "ciudad": "Langkawi", "header": "header_langkawi.jpg",
+      "resumen": "Vuelo corto a Langkawi. Resort frente al mar en Pantai Cenang.",
+      "hotel": "pelangi_beach",
+      "eventos": [
+        {"hora": "12:00", "tipo": "checkout", "texto": "Check-out 22 Macalisterz"},
+        {"hora": "13:45", "tipo": "vuelo", "texto": "AirAsia AK6261 PEN→LGK · llegada 14:20 · PNR SIEZ5X · asientos 20A/20B", "doc": "airasia_pen_lgk"},
+        {"hora": "15:30", "tipo": "checkin", "texto": "Check-in Pelangi Beach Resort & Spa · Pantai Cenang · res. 1598738084249618", "doc": "hotel_pelangi"},
+        {"hora": "18:00", "tipo": "playa", "texto": "Atardecer en Pantai Cenang"}
+      ],
+      "consejos": ["AirAsia: 7 kg cabina + 1 personal", "Pantai Cenang concentra la vida nocturna y restaurantes"]
+    },
+    {"n": 21, "fecha": "2026-10-15", "titulo": "Langkawi · SkyCab + SkyBridge", "ciudad": "Langkawi", "header": "header_langkawi.jpg", "hotel": "pelangi_beach", "resumen": "La atracción imprescindible: teleférico al monte Mat Cincang con su famoso puente colgante curvado.", "eventos": [{"hora": "09:00", "tipo": "excursion", "texto": "Panorama Langkawi · SkyCab + SkyBridge + SkyDome"}, {"hora": "14:00", "tipo": "comida", "texto": "Comida en Oriental Village"}, {"hora": "17:00", "tipo": "playa", "texto": "Vuelta a Pantai Cenang"}], "consejos": ["SkyCab: comprar fast-track online", "Llevar capa (hace frío arriba)", "Si hay nubes bajas, posponer al día siguiente"]},
+    {"n": 22, "fecha": "2026-10-16", "titulo": "Langkawi · Island Hopping", "ciudad": "Langkawi", "header": "header_langkawi.jpg", "hotel": "pelangi_beach", "resumen": "Tour en lancha por las islas: lago Dayang Bunting, observación de águilas y Pulau Beras Basah.", "eventos": [{"hora": "09:30", "tipo": "excursion", "texto": "Island Hopping Tour (3 islas, 4 horas)"}, {"hora": "16:00", "tipo": "libre", "texto": "Tarde libre / spa"}], "consejos": ["Tour ~40 MYR/persona en Pantai Cenang", "Llevar bolsa estanca para móvil/cámara"]},
+    {"n": 23, "fecha": "2026-10-17", "titulo": "Langkawi · día libre", "ciudad": "Langkawi", "header": "header_langkawi.jpg", "hotel": "pelangi_beach", "resumen": "Día de relax. Mangrove tour opcional o spa del resort.", "eventos": [{"hora": "—", "tipo": "libre", "texto": "Opción A: Mangrove Tour (Kilim Geoforest Park) · Opción B: spa y playa"}], "consejos": ["Mangrove tour: 4 h, llevar zapatillas cómodas", "Hacer maleta esta noche para vuelo temprano"]},
+    {
+      "n": 24, "fecha": "2026-10-18", "titulo": "Langkawi → KL → Melaka", "ciudad": "Melaka", "header": "header_melaka.jpg",
+      "resumen": "Día largo de tránsito. Vuelo a KL y traslado directo a Melaka, ciudad histórica portuguesa-holandesa.",
+      "hotel": "liu_men_melaka",
+      "eventos": [
+        {"hora": "09:30", "tipo": "checkout", "texto": "Check-out Pelangi Beach"},
+        {"hora": "11:15", "tipo": "vuelo", "texto": "MH1433 LGK→KUL · llegada 12:30 · PNR EKW3GI", "doc": "mh1433_iria"},
+        {"hora": "14:00", "tipo": "transfer", "texto": "Daytrip privado KLIA → Melaka · res. 6PD695Q3 · 98 USD prepagados", "doc": "daytrip_klia_melaka"},
+        {"hora": "17:00", "tipo": "checkin", "texto": "Check-in Liu Men Melaka · Lorong Hang Jebat · res. 74554350", "doc": "hotel_liu_men"},
+        {"hora": "19:00", "tipo": "paseo", "texto": "Jonker Street por la tarde-noche"}
+      ],
+      "consejos": ["Llevar maleta ligera de mano para el vuelo", "Liu Men está en pleno casco histórico"]
+    },
+    {"n": 25, "fecha": "2026-10-19", "titulo": "Melaka · ciudad histórica", "ciudad": "Melaka", "header": "header_melaka.jpg", "hotel": "liu_men_melaka", "resumen": "Plaza Holandesa, A Famosa, museos, paseo en barco por el río.", "eventos": [{"hora": "09:00", "tipo": "visita", "texto": "Dutch Square (Stadthuys) + Christ Church"}, {"hora": "11:00", "tipo": "visita", "texto": "A Famosa + St. Paul's Hill"}, {"hora": "14:00", "tipo": "comida", "texto": "Comida nyonya en Nancy's Kitchen"}, {"hora": "17:00", "tipo": "actividad", "texto": "Melaka River Cruise"}], "consejos": ["River Cruise: mejor al atardecer", "Probar pollo con bola de arroz en Hainan Chicken Rice Ball"]},
+    {"n": 26, "fecha": "2026-10-20", "titulo": "Melaka · día completo y noche", "ciudad": "Melaka", "header": "header_melaka.jpg", "hotel": "liu_men_melaka", "resumen": "Más casco histórico, mezquita Kampung Kling y mercado nocturno de Jonker Walk (vie-sáb-dom).", "eventos": [{"hora": "10:00", "tipo": "visita", "texto": "Cheng Hoon Teng Temple + Masjid Kampung Kling"}, {"hora": "15:00", "tipo": "visita", "texto": "Baba & Nyonya Heritage Museum"}, {"hora": "19:00", "tipo": "mercado", "texto": "Jonker Street Night Market"}], "consejos": ["Mercado nocturno solo vie-dom", "Probar cendol en Jonker 88"]},
+    {
+      "n": 27, "fecha": "2026-10-21", "titulo": "Melaka → Singapur", "ciudad": "Singapur", "header": "header_singapur.jpg",
+      "resumen": "Bus directo Melaka → Singapur (cruzando frontera). 4-5 horas con paso fronterizo.",
+      "hotel": "jen_singapur",
+      "eventos": [
+        {"hora": "08:00", "tipo": "checkout", "texto": "Check-out Liu Men"},
+        {"hora": "09:30", "tipo": "transporte", "texto": "Bus Melaka Sentral → Singapur (Transtar, Star Mart o KKKL · ~5 h)"},
+        {"hora": "15:00", "tipo": "checkin", "texto": "Check-in JEN Orchardgateway by Shangri-La · 277 Orchard Road · res. 12720157323", "doc": "hotel_jen"},
+        {"hora": "19:00", "tipo": "paseo", "texto": "Marina Bay · Gardens by the Bay (espectáculo Supertree)"}
+      ],
+      "consejos": ["Frontera: descender del bus con TODO el equipaje, sellar pasaporte malayo (salida) y singapurense (entrada)", "Activar eSIM Singapur antes de cruzar", "Hidratación en el bus"]
+    },
+    {"n": 28, "fecha": "2026-10-22", "titulo": "Singapur · Marina Bay + Gardens", "ciudad": "Singapur", "header": "header_singapur.jpg", "hotel": "jen_singapur", "resumen": "El día icónico: Marina Bay Sands skypark, Gardens by the Bay, Merlion.", "eventos": [{"hora": "10:00", "tipo": "visita", "texto": "Gardens by the Bay · Flower Dome + Cloud Forest"}, {"hora": "14:00", "tipo": "comida", "texto": "Comida en Maxwell Food Centre (Hainanese Chicken Rice de Tian Tian)"}, {"hora": "16:00", "tipo": "visita", "texto": "Marina Bay Sands SkyPark (entrada online)"}, {"hora": "20:00", "tipo": "espectaculo", "texto": "Spectra Light Show en Marina Bay (21:00 y 22:00)"}], "consejos": ["Cloud Forest + Flower Dome: comprar combo online", "Llevar billete múltiple de MRT (EZ-Link)"]},
+    {"n": 29, "fecha": "2026-10-23", "titulo": "Singapur · barrios", "ciudad": "Singapur", "header": "header_singapur.jpg", "hotel": "jen_singapur", "resumen": "Chinatown, Little India y Kampong Glam: los tres barrios con más personalidad.", "eventos": [{"hora": "09:30", "tipo": "visita", "texto": "Chinatown · Buddha Tooth Relic Temple"}, {"hora": "13:00", "tipo": "comida", "texto": "Comida en Chinatown Complex Food Centre"}, {"hora": "15:00", "tipo": "visita", "texto": "Kampong Glam · Sultan Mosque · Haji Lane"}, {"hora": "18:00", "tipo": "visita", "texto": "Little India · Tekka Centre · Mustafa Centre"}], "consejos": ["MRT desde Orchard a todas partes", "Sultan Mosque: vestir respetuosamente"]},
+    {"n": 30, "fecha": "2026-10-24", "titulo": "Singapur · Sentosa o museos", "ciudad": "Singapur", "header": "header_singapur.jpg", "hotel": "jen_singapur", "resumen": "Opción A: día en Sentosa (parques, S.E.A. Aquarium, playas). Opción B: día museo (National Gallery, ArtScience).", "eventos": [{"hora": "—", "tipo": "libre", "texto": "Elegir Sentosa o ruta de museos"}], "consejos": ["Sentosa: cable car desde HarbourFront (mejor opción)", "National Gallery: arte sudeste asiático, una joya"]},
+    {
+      "n": 31, "fecha": "2026-10-25", "titulo": "Singapur · último día + vuelo nocturno", "ciudad": "Singapur", "header": "header_singapur.jpg",
+      "resumen": "Mañana de cierre, almuerzo final y traslado al aeropuerto. Vuelo SIN→AUH 19:25.",
+      "eventos": [
+        {"hora": "12:00", "tipo": "checkout", "texto": "Check-out JEN Orchardgateway (guardar maletas)"},
+        {"hora": "13:00", "tipo": "comida", "texto": "Almuerzo de despedida (Lau Pa Sat o Newton Food Centre)"},
+        {"hora": "16:30", "tipo": "transfer", "texto": "MRT Orchard → Changi Airport T2 (40 min) o Grab (~35 min)"},
+        {"hora": "19:25", "tipo": "vuelo", "texto": "EY499 SIN→AUH · llegada 23:20 · T2 Changi", "doc": "etihad_iria"}
+      ],
+      "consejos": ["Llegar a Changi 3 h antes (es enorme)", "T2 tiene fuente Rain Vortex en Jewel", "Recuperar IVA (GST refund) si aplica"]
+    },
+    {
+      "n": 32, "fecha": "2026-10-26", "titulo": "Abu Dhabi → Madrid · regreso", "ciudad": "vuelo", "header": "header_kl.jpg",
+      "resumen": "Conexión nocturna en Abu Dhabi. Llegada a Madrid de madrugada.",
+      "eventos": [
+        {"hora": "02:35", "tipo": "vuelo", "texto": "EY101 AUH→MAD · llegada 07:35 · T4 Barajas", "doc": "etihad_iria"}
+      ],
+      "consejos": ["Reloj atrasado 6 h en Abu Dhabi respecto a Singapur", "Vuelta a casa: descansar antes de retomar rutina"]
+    }
+  ]
+}

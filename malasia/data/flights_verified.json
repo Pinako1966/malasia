@@ -1,0 +1,19 @@
+{
+  "etihad_internacional": {
+    "pnr": "8BFUJH",
+    "pasajeros": ["Iria Feijoo Regueiro", "Ignacio (Iñaqui)"],
+    "ida": [
+      {"vuelo": "EY102", "ruta": "MAD→AUH", "fecha_salida": "2026-09-24", "hora_salida": "10:45", "hora_llegada": "19:40", "terminal_salida": "T4 MAD", "terminal_llegada": "TA AUH"},
+      {"vuelo": "EY488", "ruta": "AUH→KUL", "fecha_salida": "2026-09-24", "hora_salida": "21:00", "fecha_llegada": "2026-09-25", "hora_llegada": "08:25", "terminal_salida": "TA AUH", "terminal_llegada": "T1 KUL"}
+    ],
+    "vuelta": [
+      {"vuelo": "EY499", "ruta": "SIN→AUH", "fecha_salida": "2026-10-25", "hora_salida": "19:25", "hora_llegada": "23:20", "terminal_salida": "T2 SIN", "terminal_llegada": "TA AUH"},
+      {"vuelo": "EY101", "ruta": "AUH→MAD", "fecha_salida": "2026-10-26", "hora_salida": "02:35", "hora_llegada": "07:35", "terminal_salida": "TA AUH", "terminal_llegada": "T4 MAD"}
+    ],
+    "billete": "607 2416011040-41",
+    "emitido": "2026-05-10"
+  },
+  "duracion_real_viaje": "32 días naturales (24 sept salida MAD → 26 oct llegada MAD); 31 días en Asia (25 sept → 25 oct)",
+  "dia_1": "2026-09-25 (llegada KUL 08:25)",
+  "ultimo_dia_asia": "2026-10-25 (salida SIN 19:25)"
+}
