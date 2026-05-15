@@ -157,9 +157,10 @@ a:hover { color: var(--gold); }
   font-weight: 400;
   font-size: clamp(1.6rem, 4vw, 2.2rem);
   line-height: 1.15; margin-bottom: 8px;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.35);
 }
 .hero-today h2 em { color: var(--gold-light); font-style: italic; }
-.hero-today p.next { opacity: 0.9; font-size: 0.95rem; margin-top: 12px; }
+.hero-today p.next { opacity: 0.95; font-size: 0.95rem; margin-top: 12px; text-shadow: 0 1px 6px rgba(0,0,0,0.3); }
 
 /* ====== DAY LIST ====== */
 .day-list { display: flex; flex-direction: column; gap: 14px; }

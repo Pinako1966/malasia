@@ -381,11 +381,14 @@
     const re = new RegExp('(' + q.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi');
     return text.replace(re, '<mark>$1</mark>');
   }
+  function escapeHtml(s) {
+    return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c]);
+  }
   function renderSearchResults(q) {
     const wrap = $('#search-results');
     if (!q.trim()) { wrap.innerHTML = '<p style="color:var(--mist)">Escribe arriba para buscar entre los 32 días, ciudades, eventos y consejos.</p>'; return; }
     const hits = search(q);
-    if (!hits.length) { wrap.innerHTML = `<p style="color:var(--mist)">Sin resultados para "<strong>${q}</strong>".</p>`; return; }
+    if (!hits.length) { wrap.innerHTML = `<p style="color:var(--mist)">Sin resultados para "<strong>${escapeHtml(q)}</strong>".</p>`; return; }
     wrap.innerHTML = hits.map(h => {
       const idx = h.blob.indexOf(q.toLowerCase());
       const excerpt = h.original.substring(Math.max(0, idx - 30), idx + 100);
