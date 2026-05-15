@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#2C4A3E">
 <title>Malasia &amp; Singapur · Iria e Iñaqui · Itinerario operativo</title>
-<meta name="description" content="Itinerario operativo del viaje a Malasia y Singapur (24 sept – 26 oct 2026) de Iria e Iñaqui. PWA offline con timeline, mapa, documentos, conversor y checklist.">
+<meta name="description" content="Itinerario operativo del viaje a Malasia y Singapur (24 sept – 26 oct 2026) de Iria e Iñaqui. PWA offline con timeline, mapa, documentos, conversor, presupuesto y checklist.">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="assets/icons/icon-192.png">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@300;400;500;600&display=swap">
@@ -16,15 +16,18 @@
 
 <header class="topbar" data-testid="topbar">
   <h1>Malasia &amp; Singapur · <em>Iria e Iñaqui</em></h1>
+  <div id="dual-clock" class="dual-clock" data-testid="dual-clock"></div>
   <button id="theme-toggle" class="icon-btn" aria-label="Cambiar tema" data-testid="theme-toggle-btn"></button>
 </header>
 
 <nav class="tabs" role="tablist" data-testid="main-tabs">
   <button class="tab" data-view="itinerario" role="tab" aria-selected="true" data-testid="tab-itinerario">Itinerario</button>
+  <button class="tab" data-view="pendientes" role="tab" aria-selected="false" data-testid="tab-pendientes">Pendientes</button>
   <button class="tab" data-view="mapa" role="tab" aria-selected="false" data-testid="tab-mapa">Mapa</button>
   <button class="tab" data-view="buscar" role="tab" aria-selected="false" data-testid="tab-buscar">Buscar</button>
-  <button class="tab" data-view="herramientas" role="tab" aria-selected="false" data-testid="tab-herramientas">Herramientas</button>
+  <button class="tab" data-view="herramientas" role="tab" aria-selected="false" data-testid="tab-herramientas">Gastos &amp; Herramientas</button>
   <button class="tab" data-view="frases" role="tab" aria-selected="false" data-testid="tab-frases">Frases</button>
+  <button class="tab" data-view="resumen" role="tab" aria-selected="false" data-testid="tab-resumen">Resumen</button>
 </nav>
 
 <main>
@@ -35,10 +38,24 @@
     <div id="day-detail" class="day-detail" data-testid="day-detail"></div>
   </section>
 
+  <!-- PENDIENTES -->
+  <section id="view-pendientes" class="view" data-testid="view-pendientes">
+    <div id="pendientes-wrap" data-testid="pendientes-wrap"></div>
+  </section>
+
   <!-- MAPA -->
   <section id="view-mapa" class="view" data-testid="view-mapa">
-    <h2 style="font-family:var(--font-display);color:var(--forest);margin-bottom:14px;font-weight:500">Mapa del viaje</h2>
-    <p style="color:var(--mist);margin-bottom:16px;font-size:.92rem">Todos los puntos del itinerario: ✈️ aeropuertos, ⛴️ puertos, 🏝️ islas, 🏨 hoteles. La línea dorada conecta los alojamientos.</p>
+    <h2 class="view-title">Mapa del viaje</h2>
+    <p class="view-sub">Todos los puntos del itinerario: ✈️ aeropuertos, ⛴️ puertos, 🏝️ islas, 🏨 hoteles. La línea dorada conecta los alojamientos.</p>
+    <div class="map-toolbar">
+      <button class="map-filter active" data-filter="all" data-testid="map-filter-all">Todos</button>
+      <button class="map-filter" data-filter="hotel" data-testid="map-filter-hotel">🏨 Hoteles</button>
+      <button class="map-filter" data-filter="aeropuerto" data-testid="map-filter-aeropuerto">✈️ Aeropuertos</button>
+      <button class="map-filter" data-filter="puerto" data-testid="map-filter-puerto">⛴️ Puertos</button>
+      <button class="map-filter" data-filter="isla" data-testid="map-filter-isla">🏝️ Islas</button>
+      <button class="map-filter" data-filter="ciudad" data-testid="map-filter-ciudad">🏙️ Ciudades</button>
+      <button id="map-locate" class="map-locate" data-testid="map-locate-btn">📍 Ubicarme</button>
+    </div>
     <div id="map" data-testid="map-container"></div>
   </section>
 
@@ -52,6 +69,38 @@
   <section id="view-herramientas" class="view" data-testid="view-herramientas">
     <div class="tools-grid">
 
+      <div class="tool tool-expenses" data-testid="tool-expenses" style="grid-column:1/-1">
+        <h3>Gastos del viaje</h3>
+        <p class="tool-sub">Registra cada gasto con su detalle. El total se compara con el presupuesto previsto.</p>
+
+        <div class="exp-form">
+          <div class="exp-form-row">
+            <div class="ef-field"><label>Fecha</label><input id="exp-fecha" type="date" data-testid="exp-fecha"></div>
+            <div class="ef-field"><label>Pagado por</label><select id="exp-pagador" data-testid="exp-pagador"></select></div>
+          </div>
+          <div class="exp-form-row">
+            <div class="ef-field ef-grow"><label>Concepto</label><input id="exp-concepto" type="text" placeholder="Ej. Cena Joo Hooi Café" data-testid="exp-concepto"></div>
+            <div class="ef-field"><label>Categoría</label><select id="exp-cat" data-testid="exp-cat"></select></div>
+          </div>
+          <div class="exp-form-row">
+            <div class="ef-field"><label>Importe</label><input id="exp-amt" type="number" inputmode="decimal" step="0.01" placeholder="0.00" data-testid="exp-amt"></div>
+            <div class="ef-field"><label>Moneda</label>
+              <select id="exp-cur" data-testid="exp-cur">
+                <option value="MYR">MYR</option>
+                <option value="SGD">SGD</option>
+                <option value="EUR">EUR</option>
+              </select>
+            </div>
+            <div class="ef-field ef-cta"><button id="exp-add" class="primary" data-testid="exp-add-btn">+ Añadir gasto</button></div>
+          </div>
+        </div>
+
+        <div id="budget-wrap" class="budget-wrap" data-testid="budget-wrap"></div>
+
+        <h4 class="exp-list-title">Apuntes registrados</h4>
+        <div id="exp-list" class="exp-list" data-testid="exp-list"></div>
+      </div>
+
       <div class="tool" data-testid="tool-converter">
         <h3>Conversor de divisas</h3>
         <div class="row">
@@ -63,7 +112,7 @@
           </select>
         </div>
         <div class="row">
-          <span style="align-self:center;color:var(--mist);font-size:.9rem">a</span>
+          <span class="row-sep">a</span>
           <select id="conv-to" data-testid="conv-to">
             <option value="EUR" selected>EUR</option>
             <option value="MYR">MYR</option>
@@ -71,30 +120,12 @@
           </select>
         </div>
         <div id="conv-result" class="conv-result" data-testid="conv-result">—</div>
-        <p style="color:var(--mist);font-size:.78rem;margin-top:8px">Tasas aprox.: 1 € = 5.05 MYR · 1 € = 1.45 SGD</p>
-      </div>
-
-      <div class="tool" data-testid="tool-expenses">
-        <h3>Gastos del viaje</h3>
-        <div class="row">
-          <input id="exp-desc" type="text" placeholder="Descripción" data-testid="exp-desc">
-        </div>
-        <div class="row">
-          <input id="exp-amt" type="number" inputmode="decimal" placeholder="Importe" step="0.01" data-testid="exp-amt">
-          <select id="exp-cur" data-testid="exp-cur">
-            <option value="MYR">MYR</option>
-            <option value="SGD">SGD</option>
-            <option value="EUR">EUR</option>
-          </select>
-          <button id="exp-add" class="primary" data-testid="exp-add-btn">Añadir</button>
-        </div>
-        <div id="exp-list" class="exp-list" data-testid="exp-list"></div>
-        <div class="exp-total"><span>Total convertido</span><span id="exp-total" data-testid="exp-total">0.00 €</span></div>
+        <p class="tool-foot">Tasas aprox.: 1 € = 5.05 MYR · 1 € = 1.45 SGD</p>
       </div>
 
       <div class="tool" data-testid="tool-checklist" style="grid-column:1/-1">
         <h3>Checklist del viaje</h3>
-        <p style="color:var(--mist);font-size:.88rem;margin-bottom:10px">Tus marcas se guardan automáticamente en este dispositivo.</p>
+        <p class="tool-sub">Tus marcas se guardan automáticamente en este dispositivo.</p>
         <div id="checklist-wrap" data-testid="checklist-wrap"></div>
       </div>
 
@@ -103,17 +134,38 @@
 
   <!-- FRASES -->
   <section id="view-frases" class="view" data-testid="view-frases">
-    <h2 style="font-family:var(--font-display);color:var(--forest);margin-bottom:6px;font-weight:500">Frases útiles</h2>
-    <p style="color:var(--mist);margin-bottom:20px;font-size:.92rem">Español → Malayo (Bahasa Melayu) → Inglés</p>
+    <h2 class="view-title">Frases útiles</h2>
+    <p class="view-sub">Español → Malayo (Bahasa Melayu) → Inglés (toca 🔊 para escuchar en inglés)</p>
     <div id="phrases-wrap" data-testid="phrases-wrap"></div>
+  </section>
+
+  <!-- RESUMEN -->
+  <section id="view-resumen" class="view" data-testid="view-resumen">
+    <h2 class="view-title">Resumen del viaje</h2>
+    <p class="view-sub">Estado en vivo, mini-timeline visual y exportación del diario.</p>
+    <div id="dashboard-wrap" data-testid="dashboard-wrap"></div>
   </section>
 
 </main>
 
 <footer class="foot">
   <p>Hecho con ✦ para <em>Iria e Iñaqui</em></p>
-  <p style="margin-top:6px;font-size:.78rem">Reserva Etihad <strong>8BFUJH</strong> · 32 días · 25 sept → 26 oct 2026</p>
+  <p class="foot-sub">Reserva Etihad <strong>8BFUJH</strong> · 32 días · 25 sept → 26 oct 2026</p>
 </footer>
+
+<!-- SOS floating button -->
+<button id="sos-btn" class="sos-btn" aria-label="Emergencias" title="Emergencias" data-testid="sos-btn">
+  <span class="sos-emoji">🚨</span><span class="sos-label">SOS</span>
+</button>
+
+<!-- SOS modal -->
+<div id="sos-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="sos-title" data-testid="sos-modal">
+  <div class="modal-inner">
+    <button id="sos-close" class="modal-close" aria-label="Cerrar" data-testid="sos-close-btn">×</button>
+    <h2 id="sos-title" class="modal-title">Emergencias &amp; datos vitales</h2>
+    <div id="sos-body"></div>
+  </div>
+</div>
 
 <div id="toast" class="toast" role="status" aria-live="polite" data-testid="toast"></div>
 
