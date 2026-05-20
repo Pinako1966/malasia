@@ -1,0 +1,8 @@
+Actualización v37_FINAL_OPTIMIZADA · 19 mayo 2026
+- Optimización visual y de carga: imágenes con lazy loading/decoding async, compresión de imágenes incrustadas no sensibles y ajustes de carga móvil.
+- Mejora móvil: navegación más estable, mapas e iframes con carga diferida y botones táctiles más cómodos.
+- Accesibilidad: enlace de salto, foco visible, títulos en mapas embebidos, aria-live en divisas y textos alternativos revisados.
+- Conversor MYR/SGD → EUR: fecha de última actualización visible y aviso claro cuando se usan tasas guardadas u offline.
+- Exportación: botón para imprimir/guardar como PDF desde el navegador y PDF imprimible complementario incluido en la entrega.
+- Viaje: nota prudente de visados/inmigración según nacionalidad y recordatorio de revisar eventos locales 30-45 días antes del viaje.
+- No se incorpora sección de salud/botiquín ni nota de Deepavali por decisión expresa.

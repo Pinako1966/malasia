@@ -1,0 +1,18 @@
+Actualización Singapur v37 · cierre del itinerario
+
+Base utilizada:
+- v37 consolidada hasta Melaka: KL + Redang + Perhentian + Cameron + Georgetown + Langkawi + Melaka.
+
+Mejoras incorporadas:
+- Mapa de orientación de Singapur integrado en el bloque de Singapur.
+- Relectura de la ciudad por zonas: Orchard/Somerset como base, Marina Bay + Civic District, Gardens by the Bay, Chinatown/Telok Ayer, Kampong Gelam/Bugis, Little India/Tekka, Botanic Gardens/Tiong Bahru y Jewel Changi.
+- Limpieza de la programación de los días 28 a 32 para evitar duplicidades internas y reforzar la lógica operativa.
+- Día 29: Marina Bay, Civic District, Merlion, Gardens by the Bay, Garden Rhapsody y Spectra con control de horarios/cierres oficiales.
+- Día 30: Chinatown + Maxwell/Chinatown Complex, Kampong Gelam/Haji Lane/Sultan Mosque y Little India/Tekka Centre.
+- Día 31: Botanic Gardens, Tiong Bahru y cena final flexible; planes de lluvia con National Gallery / Asian Civilisations Museum / Orchard.
+- Día 32: Jewel Changi y Rain Vortex sin comprometer el margen del vuelo internacional.
+- Añadido mapa específico del Día 31 y reforzadas las rutas de Google Maps de Singapur.
+
+Criterio aplicado:
+- No se ha convertido Singapur en una guía enciclopédica. Se prioriza eficacia del tiempo, movilidad MRT/Grab, planes resistentes a lluvia/calor y cierre visual del viaje.
+- Las referencias operativas se han contrastado con fuentes oficiales: Gardens by the Bay, Marina Bay Sands, Jewel Changi e ICA.

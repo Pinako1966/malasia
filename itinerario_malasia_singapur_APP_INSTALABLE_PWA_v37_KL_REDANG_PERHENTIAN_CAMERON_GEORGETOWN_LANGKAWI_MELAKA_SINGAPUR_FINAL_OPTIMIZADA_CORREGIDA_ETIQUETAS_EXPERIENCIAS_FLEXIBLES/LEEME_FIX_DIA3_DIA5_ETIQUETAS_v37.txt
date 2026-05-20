@@ -1,0 +1,12 @@
+Corrección D3/D5 · etiquetas y cabeceras de traslado
+
+Base utilizada: v37 ... CORREGIDA_ETIQUETAS.
+No se parte de UI_PREMIUM ni de UI_SEGURA.
+
+Cambios:
+- Corrección final de contraste de cabeceras de días de traslado.
+- Eliminación del pseudo-rótulo ::after "traslado" que podía interferir con la numeración.
+- Refuerzo específico de Día 3 y Día 5.
+- Ocultación de la fila resumen del apartado Hoteles y bases.
+
+Sin cambios en rutas, hoteles, documentos, mapas, conversor ni botón Guardar PDF.

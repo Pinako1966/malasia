@@ -1,0 +1,60 @@
+v37 · Inmigración cumplimentada prevista + traslado Kuala Besut Jetty → Kota Bharu incorporado.
+
+
+Revisión v37 corregida inmigración final:
+- Pestaña Inmigración visible en cabecera.
+- Acceso móvil Inmig. añadido.
+- Operativo local para adjuntar MDAC y SG Arrival Card previsto.
+- Traslado Kuala Besut Jetty → Kota Bharu conservado.
+- Eliminado aviso visible "Versión sensible".
+Actualización v37 Michelin KL final:
+- Módulo gastronómico Michelin/Bib Gourmand Kuala Lumpur integrado en programa, con prioridades por zona y enlaces a mapas/fichas.
+- Cache PWA renovada para forzar actualización.
+Actualización v37 Merdeka Square final:
+- Merdeka Square / Dataran Merdeka incorporada al Día 13 de Kuala Lumpur, entre Masjid Jamek / Sultan Abdul Samad y Central Market.
+- Ruta, agenda, tabla resumen, POIs de mapas y enlaces de Google Maps actualizados.
+- Se conserva el módulo Michelin KL ya integrado.
+- Cache PWA renovada para forzar actualización.
+
+Actualización v37 · KL/Redang/Perhentian · 18 mayo 2026
+- Kuala Lumpur: añadidas alternativas Vertigo / SkyBar al Heli Lounge; Masjid Wilayah; Brickfields como alternativa; Berjaya Times Square como plan de lluvia; refuerzo de Chinatown / Central Market / Kwai Chai Hong.
+- Redang: incorporado mapa/lectura de orientación de Pulau Redang.
+- Perhentian: priorización Besar/Kecil; Turtle Point, Shark Point y Fish Point/Teluk Keke; taxi-boat; cobertura/WhatsApp de barquero; senderos depurados; Fishing Village y mapa de orientación.
+
+Actualización v37 · Cameron Highlands · 18 mayo 2026
+- Incorporado mapa de orientación de Cameron Highlands.
+- Reorganizada la etapa alrededor de BOH Sungai Palas, Cameron Valley/Bharat, Mossy Forest condicionado a apertura/clima y tarde flexible por lluvia.
+- Depurados senderos: Trail 4/Parit Falls como opción corta; Trail 10+6 solo con buen terreno, calzado y mapa offline.
+- Reforzada logística: tour 4x4 o taxi privado; bus local descartado para encadenar visitas.
+
+Actualización Georgetown / Penang v37:
+- Mapa de orientación de George Town / Penang integrado.
+- Etapa depurada por capas: UNESCO, Street Art, clanes, jetties, Street of Harmony, mansiones, Air Itam y gastronomía.
+- Ajustes operativos sobre Kek Lok Si, Penang Hill, Hin Bus Depot, New Lane y uso de Muntri Mews / 22 Macalisterz.
+
+Actualización Langkawi v37:
+- Mapa de orientación de Langkawi integrado.
+- Etapa depurada por zonas: Pantai Cenang/Pelangi, Machinchang/SkyCab, Kilim/Tanjung Rhu, sur de islas y Kuah.
+- Ajustes operativos sobre SkyCab/SkyBridge, Kilim Geoforest Park, Temoyong Night Market, planes de lluvia y día flexible.
+
+Actualización Melaka v37:
+- Mapa de orientación del centro histórico de Melaka integrado.
+- Etapa depurada por zonas: Liu Men/Jalan Tokong, Jonker/Heeren, Harmony Street, Dutch Square/St Paul/A Famosa, río y segunda capa.
+- Ajustes operativos sobre Jonker Night Market, ruta UNESCO, Melaka River Cruise, planes de lluvia/calor, gastronomía Nyonya y preparación del traslado a Singapur.
+
+Actualización Singapur v37:
+- Mapa de orientación de Singapur integrado.
+- Etapa depurada por zonas: Orchard/Somerset, Marina Bay + Civic District, Gardens by the Bay, Chinatown/Telok Ayer, Kampong Gelam/Bugis, Little India/Tekka, Botanic Gardens/Tiong Bahru y Jewel Changi.
+- Días 28 a 32 limpiados y reforzados para evitar duplicidades, mejorar planes de lluvia/calor y ordenar el cierre del viaje.
+- Ajustes operativos sobre Garden Rhapsody, Spectra, cierres de Gardens by the Bay, SG Arrival Card y Jewel Changi.
+
+Actualización v37_FINAL_OPTIMIZADA · 19 mayo 2026
+- Optimización visual y de carga: imágenes con lazy loading/decoding async, compresión de imágenes incrustadas no sensibles y ajustes de carga móvil.
+- Mejora móvil: navegación más estable, mapas e iframes con carga diferida y botones táctiles más cómodos.
+- Accesibilidad: enlace de salto, foco visible, títulos en mapas embebidos, aria-live en divisas y textos alternativos revisados.
+- Conversor MYR/SGD → EUR: fecha de última actualización visible y aviso claro cuando se usan tasas guardadas u offline.
+- Exportación: botón para imprimir/guardar como PDF desde el navegador y PDF imprimible complementario incluido en la entrega.
+- Viaje: nota prudente de visados/inmigración según nacionalidad y recordatorio de revisar eventos locales 30-45 días antes del viaje.
+- No se incorpora sección de salud/botiquín ni nota de Deepavali por decisión expresa.
+
+CORRECCION_ETIQUETAS_v37: Mejora de contraste y legibilidad de etiquetas de etapas/días.

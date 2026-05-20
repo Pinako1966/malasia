@@ -1,0 +1,13 @@
+Actualización v37 · Cameron Highlands · 18 mayo 2026
+
+Base utilizada:
+- v37 correcta con Michelin KL y mejoras ya consolidadas de Kuala Lumpur, Redang y Perhentian.
+
+Mejoras incorporadas en Cameron Highlands:
+- Mapa de orientación de Cameron Highlands mediante Google My Maps del usuario.
+- Priorización BOH Sungai Palas / Cameron Valley-Bharat como núcleo de la etapa.
+- Mossy Forest tratado como visita condicionada a apertura, clima y operador/tour confirmado.
+- Logística depurada: tour 4x4 o taxi privado; se desaconseja bus local para encadenar visitas.
+- Senderos depurados: Trail 4/Parit Falls como paseo corto; Trail 10+6 solo con buen terreno, calzado y mapa offline; evitar rutas largas tras lluvia.
+- Plan de lluvia reforzado: té, Tanah Rata, Brinchang/Night Market, comida local y descanso.
+- Actualización de agendas del día 15 y día 16 manteniendo la estructura visual y documental de la v37.

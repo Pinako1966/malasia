@@ -1,0 +1,1 @@
+Los gastos añadidos se guardan en localStorage del navegador. Exporta copia JSON al final del día para respaldo.

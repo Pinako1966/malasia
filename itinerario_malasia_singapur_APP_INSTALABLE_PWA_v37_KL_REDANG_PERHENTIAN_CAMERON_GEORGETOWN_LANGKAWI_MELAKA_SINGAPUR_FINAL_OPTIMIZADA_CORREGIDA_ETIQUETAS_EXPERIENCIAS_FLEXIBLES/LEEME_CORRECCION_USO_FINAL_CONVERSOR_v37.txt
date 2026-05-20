@@ -1,0 +1,1 @@
+Corrección sobre v37_FINAL_OPTIMIZADA: se retira la pestaña/sección Uso final, se mantiene un botón compacto Guardar PDF en cabecera y se restaura la etiqueta visible Conversor € en el encabezado.

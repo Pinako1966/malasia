@@ -1,0 +1,171 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Sin conexión · Malasia & Singapur</title><style>body{font-family:system-ui,-apple-system,Segoe UI,sans-serif;background:#f5efe6;color:#1a1a18;max-width:720px;margin:0 auto;padding:48px 22px;line-height:1.6}.card{background:#fffaf1;border:1px solid rgba(44,74,62,.15);border-radius:24px;padding:24px;box-shadow:0 16px 46px rgba(31,45,38,.12)}h1{color:#2C4A3E}</style>
+<style id="fix-d3-d5-traslado-legible-2026">
+/* ============================================================
+   FIX definitivo D3/D5 · etiquetas de días y cabeceras de traslado
+   Base segura: v37 ... CORREGIDA_ETIQUETAS
+   Motivo: una regla posterior de "traslado" aclaraba el fondo de la
+   cabecera mientras el texto permanecía blanco; además añadía un
+   pseudo-rótulo ::after que podía interferir visualmente. Se corrige
+   en la última capa CSS sin rediseñar el documento.
+   ============================================================ */
+
+/* Retirada de la fila resumen del bloque Hoteles y bases */
+.hotels-bases-summary{
+  display:none !important;
+}
+
+/* Agenda: etiquetas de días siempre legibles, incluidas Día 3 y Día 5 */
+.agenda-item .agenda-day,
+.booklet-toc-num{
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  min-width:4.25rem !important;
+  min-height:1.7rem !important;
+  padding:.30rem .66rem !important;
+  border-radius:999px !important;
+  background:#2C4A3E !important;
+  background-image:none !important;
+  color:#FFFFFF !important;
+  -webkit-text-fill-color:#FFFFFF !important;
+  border:1.5px solid #C4922A !important;
+  text-shadow:none !important;
+  box-shadow:0 3px 9px rgba(26,26,24,.18) !important;
+  font-weight:800 !important;
+  line-height:1 !important;
+  letter-spacing:.02em !important;
+  white-space:nowrap !important;
+  opacity:1 !important;
+  filter:none !important;
+  mix-blend-mode:normal !important;
+}
+
+/* Cabeceras de todos los días de traslado: fondo oscuro + texto claro */
+.day-card[data-day-type="traslado"] .day-header{
+  background:linear-gradient(135deg,#2C4A3E 0%,#3D6B5A 100%) !important;
+  color:#FFFFFF !important;
+  border-bottom:1px solid rgba(196,146,42,.38) !important;
+  overflow:visible !important;
+}
+.day-card[data-day-type="traslado"] .day-header .day-date,
+.day-card[data-day-type="traslado"] .day-header .day-title-main,
+.day-card[data-day-type="traslado"] .day-header .day-toggle{
+  color:#FFFFFF !important;
+  -webkit-text-fill-color:#FFFFFF !important;
+  opacity:1 !important;
+  filter:none !important;
+  mix-blend-mode:normal !important;
+  text-shadow:0 1px 1px rgba(0,0,0,.30) !important;
+}
+.day-card[data-day-type="traslado"] .day-header .day-date{
+  color:rgba(255,255,255,.82) !important;
+  -webkit-text-fill-color:rgba(255,255,255,.82) !important;
+}
+
+/* Número del día: contraste invertido y sin pseudoetiqueta superpuesta */
+.day-card[data-day-type="traslado"] .day-num-badge{
+  position:relative !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  min-width:3.15rem !important;
+  width:3.15rem !important;
+  height:3.15rem !important;
+  flex:0 0 3.15rem !important;
+  border-radius:999px !important;
+  background:#FFFFFF !important;
+  background-image:none !important;
+  color:#2C4A3E !important;
+  -webkit-text-fill-color:#2C4A3E !important;
+  border:2px solid #C4922A !important;
+  text-shadow:none !important;
+  box-shadow:0 4px 12px rgba(0,0,0,.24) !important;
+  font-weight:800 !important;
+  line-height:1 !important;
+  opacity:1 !important;
+  filter:none !important;
+  mix-blend-mode:normal !important;
+}
+.day-card[data-day-type="traslado"] .day-num-badge::after{
+  content:none !important;
+  display:none !important;
+}
+
+/* Refuerzo específico para Día 3 y Día 5, por ser los detectados */
+#d3 .day-header,
+#d5 .day-header{
+  background:linear-gradient(135deg,#2C4A3E 0%,#3D6B5A 100%) !important;
+}
+#d3 .day-title-main,
+#d5 .day-title-main,
+#d3 .day-date,
+#d5 .day-date{
+  color:#FFFFFF !important;
+  -webkit-text-fill-color:#FFFFFF !important;
+  opacity:1 !important;
+  visibility:visible !important;
+}
+#d3 .day-date,
+#d5 .day-date{
+  color:rgba(255,255,255,.82) !important;
+  -webkit-text-fill-color:rgba(255,255,255,.82) !important;
+}
+#d3 .day-num-badge,
+#d5 .day-num-badge{
+  background:#FFFFFF !important;
+  color:#2C4A3E !important;
+  -webkit-text-fill-color:#2C4A3E !important;
+  border:2px solid #C4922A !important;
+}
+#d3 .day-num-badge::after,
+#d5 .day-num-badge::after{
+  content:none !important;
+  display:none !important;
+}
+
+@media(max-width:640px){
+  .agenda-item .agenda-day,
+  .booklet-toc-num{
+    min-width:3.85rem !important;
+    min-height:1.56rem !important;
+    padding:.26rem .52rem !important;
+    font-size:.68rem !important;
+  }
+  .day-card[data-day-type="traslado"] .day-header{
+    gap:.72rem !important;
+  }
+  .day-card[data-day-type="traslado"] .day-num-badge{
+    min-width:2.82rem !important;
+    width:2.82rem !important;
+    height:2.82rem !important;
+    flex-basis:2.82rem !important;
+    font-size:1.25rem !important;
+  }
+}
+
+@media(print){
+  .agenda-item .agenda-day,
+  .booklet-toc-num,
+  .day-card[data-day-type="traslado"] .day-num-badge{
+    color:#000000 !important;
+    -webkit-text-fill-color:#000000 !important;
+    background:#FFFFFF !important;
+    border:1px solid #000000 !important;
+    box-shadow:none !important;
+    text-shadow:none !important;
+  }
+  .day-card[data-day-type="traslado"] .day-header{
+    background:#FFFFFF !important;
+    color:#000000 !important;
+  }
+  .day-card[data-day-type="traslado"] .day-header .day-date,
+  .day-card[data-day-type="traslado"] .day-header .day-title-main,
+  .day-card[data-day-type="traslado"] .day-header .day-toggle{
+    color:#000000 !important;
+    -webkit-text-fill-color:#000000 !important;
+    text-shadow:none !important;
+  }
+}
+</style>
+
+</head><body><main class="card"><h1>Guía sin conexión</h1><p>La app está instalada, pero este recurso concreto no estaba todavía en caché. Vuelve a abrir la guía principal cuando recuperes conexión o accede a <a href="./index.html">index.html</a>.</p></main></body></html>

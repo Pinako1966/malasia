@@ -1,0 +1,14 @@
+Actualización v37 · Capa opcional de gastronomía, mirada local y experiencias flexibles
+
+Base: versión corregida de etiquetas con fix de Día 3 y Día 5.
+
+Cambios incorporados:
+- Nueva sección “Gastronomía, mirada local y experiencias flexibles”.
+- Mini-guía de platos para decidir rápido sin sobrecargar el itinerario.
+- Consejos de mirada local: hawkers, warungs, efectivo, palabras básicas y respeto fotográfico.
+- Refuerzo de Clan Jetties como comunidades vivas.
+- Extras suaves: Yut Kee/Nasi Kandar Pelita, pasar malam, mercado de especias, río de Melaka, ArtScience/Night Safari solo si encajan.
+- Criterio para tours pequeños y tranquilos en Kilim/Perhentian.
+
+No se han modificado rutas, hoteles, traslados, documentos, mapas, conversor, botón Guardar PDF ni estructura diaria.
+No se ha reintroducido UI Premium, UI Segura, Uso final, Deepavali 2026 ni salud/botiquín.

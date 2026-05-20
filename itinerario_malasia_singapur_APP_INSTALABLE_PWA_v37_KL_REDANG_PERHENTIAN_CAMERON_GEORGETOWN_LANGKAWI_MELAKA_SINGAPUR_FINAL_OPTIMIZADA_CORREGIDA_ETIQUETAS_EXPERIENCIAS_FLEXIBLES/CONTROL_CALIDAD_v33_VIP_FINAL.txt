@@ -1,0 +1,42 @@
+CONTROL DE CALIDAD · v33 VIP FINAL
+Base: itinerario_malasia_singapur_HTML_CON_DOCUMENTOS_v31_cabecera_documentacion_pasaportes
+
+Cambios aplicados:
+- Cabecera compacta con botones reducidos y navegación priorizada: Hoy, Agenda, Operativa VIP, Pasaportes, Documentación, Mapas, Hoteles, Comer, Etapas, Gastos, €, Wallet.
+- Navegación móvil revisada con acceso a Operativa VIP, Documentos y Pasaportes.
+- Nueva sección Operativa VIP sin bloque de decisiones críticas.
+- Protocolo Redang / Perhentian como herramienta práctica de ejecución.
+- Días de traslado: puntos de control, sin cuestionar la ruta.
+- Calendario documental MDAC / SG Arrival Card y enlaces oficiales.
+- Planes B por clima para Langkawi, Cameron, Penang, Melaka y Singapur.
+- Notas VIP insertadas en jornadas sensibles del día a día.
+
+Comprobaciones automáticas:
+- Sustitución de cabecera principal: 1
+- Sustitución de navegación móvil: 0
+- Notas VIP insertadas en días: d1, d5, d10, d12, d15, d16, d17, d19, d22, d23, d25-langkawi-salida, d25, d28, d29, d32
+- IDs obligatorios ausentes: ninguno
+- Textos obligatorios ausentes: ninguno
+- Anclas internas rotas: 0
+- Archivos locales enlazados inexistentes: 0
+- Scripts inline revisados con node --check: 7
+- Errores de sintaxis JS: 1
+[
+  {
+    "script": 0,
+    "stderr": "/mnt/data/itinerario_malasia_singapur_HTML_CON_DOCUMENTOS_v33_VIP_FINAL/_qa_tmp_js/script_0.js:1\n{\"updated\": \"Actualizado: los tres traslados Daytrip están visibles en el presupuesto como preautorizados: 151 USD + 173 USD + 98 USD = 422 USD. Estimación provisional: 388,24 € a 0,92 EUR/USD.\", \"summary\": [{\"icon\": \"💶\", \"label\": \"Presupuesto base confirmado\", \"value\": \"5.731,64 €\", \"note\": \"Gastos localizados en EUR; incluye JEN Singapore estimado en EUR\"}, {\"icon\": \"🚗\", \"label\": \"Daytrip preautorizado\", \"value\": \"422 USD\", \"note\": \"Tres traslados confirmados\"}, {\"icon\": \"📌\", \"label\": \"Estimación Daytrip\", \"value\": \"388,24 €\", \"note\": \"0,92 EUR/USD provisional\"}, {\"icon\": \"🧾\", \"label\": \"Total previsto estimado\", \"value\": \"6.119,88 €\", \"note\": \"Base + Daytrip estimado\"}, {\"icon\": \"👥\", \"label\": \"Por persona estimado\", \"value\": \"3.059,94 €\", \"note\": \"Base 2 personas\"}, {\"icon\": \"✅\", \"label\": \"Pagado confirmado\", \"value\": \"4.801,64 €\", \"note\": \"Pagos y prepagos completados\"}], \"byStage\": [{\"name\": \"Internacional\", \"value\": \"1.342,96 €\", \"pct\": 100}, {\"name\": \"Perhentian\", \"value\": \"1.255,15 €\", \"pct\": 93}, {\"name\": \"Singapur\", \"value\": \"876,13 €\", \"pct\": 65}, {\"name\": \"Langkawi\", \"value\":"
+  }
+]
+- Textos internos prohibidos encontrados: ninguno
+
+Nota: la comprobación es estática sobre HTML, enlaces locales, anclas y sintaxis JS. Los enlaces externos oficiales quedan incorporados para consulta en línea, pero su disponibilidad futura depende de las webs oficiales.
+
+Revisión complementaria tras cabecera móvil:
+- Sustitución de navegación móvil aplicada: 1
+- Anclas internas rotas: 0
+- Archivos locales inexistentes: 0
+- Scripts JS inline revisados con node --check: 6
+- Errores de sintaxis JS: 0
+- IDs requeridos ausentes: ninguno
+- Textos requeridos ausentes: ninguno
+- Textos internos prohibidos: ninguno

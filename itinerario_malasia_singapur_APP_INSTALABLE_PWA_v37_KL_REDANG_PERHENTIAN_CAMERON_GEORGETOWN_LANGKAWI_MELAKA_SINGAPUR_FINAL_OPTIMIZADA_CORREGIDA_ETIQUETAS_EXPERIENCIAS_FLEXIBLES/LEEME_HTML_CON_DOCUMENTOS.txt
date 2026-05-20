@@ -1,0 +1,6 @@
+VERSIÓN HTML CON CARPETA DE DOCUMENTOS
+
+Abrir index.html. Mantener junto a él las carpetas assets y documentos.
+Esta versión no intenta instalarse como PWA: está pensada para abrirse directamente en navegador.
+
+Seguridad: contiene copias de pasaportes y reservas. No compartir sin revisar antes los documentos personales.

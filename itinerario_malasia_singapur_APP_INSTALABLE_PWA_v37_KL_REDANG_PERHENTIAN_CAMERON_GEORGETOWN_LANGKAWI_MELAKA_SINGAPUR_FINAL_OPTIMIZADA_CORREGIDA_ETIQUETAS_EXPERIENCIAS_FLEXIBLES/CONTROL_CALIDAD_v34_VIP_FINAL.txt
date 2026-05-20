@@ -1,0 +1,28 @@
+CONTROL DE CALIDAD · v34 VIP FINAL
+
+Entregables generados desde la base v33 VIP FINAL, con separación correcta entre HTML con documentos y PWA instalable.
+
+1. HTML CON DOCUMENTOS
+- Anclas internas rotas: 0
+- Archivos locales enlazados inexistentes: 0
+- Errores de sintaxis JavaScript inline: 0
+- IDs duplicados: ninguno
+- Pestañas Pasaportes y Documentación presentes: sí
+- Operativa VIP / Protocolo Redang-Perhentian presente: sí
+- Tarjeta de uso corregida: indica que esta versión es HTML con carpeta de documentos, sin prometer instalación PWA.
+
+2. PWA INSTALABLE
+- Manifest enlazado: sí
+- Service worker registrado: sí
+- Sintaxis service-worker.js: correcta
+- Anclas internas rotas: 0
+- Archivos locales enlazados inexistentes: 0
+- Errores de sintaxis JavaScript inline: 0
+- IDs duplicados: ninguno
+- Pestañas Pasaportes y Documentación presentes: sí
+- Operativa VIP / Protocolo Redang-Perhentian presente: sí
+
+3. ZIP
+- Prueba de integridad de ambos ZIP: correcta.
+
+Nota técnica: la PWA se instala desde HTTPS o localhost; abierta directamente como file://, los navegadores no permiten instalación completa por seguridad.

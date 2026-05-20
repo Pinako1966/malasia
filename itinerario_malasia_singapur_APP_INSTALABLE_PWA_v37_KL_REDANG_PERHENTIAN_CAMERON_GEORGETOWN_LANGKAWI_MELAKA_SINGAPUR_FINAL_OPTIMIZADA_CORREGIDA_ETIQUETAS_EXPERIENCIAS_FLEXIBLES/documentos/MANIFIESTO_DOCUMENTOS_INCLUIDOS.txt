@@ -1,0 +1,28 @@
+etihad_iria_8bfujh.pdf
+etihad_ignacio_8bfujh.pdf
+malaysia_mh1336_iria_kul_tgg.pdf
+malaysia_mh1336_ignacio_kul_tgg.pdf
+malaysia_mh1397_iria_kbr_kul.pdf
+malaysia_mh1397_ignacio_kbr_kul.pdf
+airasia_itinerary_siez5x_penang_langkawi.pdf
+airasia_invoice_siez5x.pdf
+malaysia_mh1433_iria_lgk_kul.pdf
+malaysia_mh1433_ignacio_lgk_kul.pdf
+transfer_tgg_merang_jetty.pdf
+ferry_merang_redang.pdf
+ferry_redang_perhentian.pdf
+hotel_merang_villa_wanie_inn_confirmacion.pdf
+reserva_laguna_redang.pdf
+hotel_perhentian_alunan_resort_checkin.pdf
+hotel_kuala_lumpur_santa_grand_signature_checkin.pdf
+hotel_cameron_highlands_avillion_checkin.pdf
+hotel_penang_muntri_mews_checkin.pdf
+hotel_penang_22_macalisterz_checkin.pdf
+hotel_langkawi_pelangi_beach_resort_checkin.pdf
+hotel_melaka_liu_men_melaka_checkin.pdf
+hotel_singapur_jen_orchardgateway_confirmacion.pdf
+- daytrip_tanah_rata_george_town_2XPAY1F5.pdf · Daytrip Tanah Rata → George Town · 10 oct 2026 · 09:00 → 12:36 · 173 USD preautorizados
+- daytrip_klia_melaka_6PD695Q3.pdf · Daytrip KLIA → Melaka · reserva 6PD695Q3 · 18 oct 2026 · 98 USD preautorizados · requiere ajustar hora de recogida.
+
+- transfer_kuala_besut_kota_bharu_hotel.pdf: traslado Kuala Besut Jetty → Kota Bharu gestionado por Alunan / hotel.
+- transfer_kuala_besut_kota_bharu_hotel.docx: documento original editable del traslado.

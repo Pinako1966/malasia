@@ -1,0 +1,5 @@
+Corrección v37 · etiquetas de etapas
+
+Se corrige la legibilidad de las etiquetas/numeración de etapas y días, especialmente en las etapas 2, 3 y 5.
+No se modifica el contenido del itinerario, rutas, hoteles, documentos, conversor, botón Guardar PDF ni estructura de navegación.
+Base: v37_FINAL_OPTIMIZADA_CORREGIDA.

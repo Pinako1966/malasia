@@ -1,0 +1,15 @@
+Actualización Langkawi · v37
+
+Base utilizada: v37 consolidada con Michelin KL, Redang, Perhentian, Cameron Highlands y George Town / Penang.
+
+Mejoras aplicadas:
+- Incorporado mapa de orientación de Langkawi mediante iframe de Google Maps y lectura por zonas: Pantai Cenang/Pelangi, Machinchang/SkyCab, Kilim/Tanjung Rhu, sur de islas y Kuah.
+- Reforzada la lógica de descanso activo: dos salidas fuertes como máximo —SkyCab/SkyBridge y Kilim— y un día flexible real.
+- Añadido control operativo de SkyCab: comprobar calendario oficial, cierres por meteorología/mantenimiento y no subir si la visibilidad no compensa.
+- Afinada la salida a Kilim Geoforest Park: mejor mañana, barco reducido/privado si encaja, no convertir el eagle feeding en objetivo central, confirmar WhatsApp, punto de recogida y duración.
+- Añadidos criterios de playa y clima: Pantai Cenang/Tengah para base, Tanjung Rhu como extensión norte, Pantai Kok/Pasir Tengkorak/Telaga Tujuh si el día es de noroeste.
+- Incorporados planes B de lluvia: Underwater World, cafés/spa en Cenang, descanso en Pelangi, duty-free/Kuah solo si encaja.
+- Añadido mercado nocturno de Temoyong como opción natural del jueves desde Pantai Cenang.
+- Depurados descartes inteligentes: Eagle Square, Kuah, cocodrilos/atracciones familiares, deportes náuticos e island hopping no desplazan SkyCab/Kilim.
+
+Criterio: Langkawi se mantiene como pausa premium. Las nuevas capas no convierten la isla en una agenda rígida; ayudan a decidir bien según clima y energía.

@@ -1,0 +1,13 @@
+Actualización Georgetown / Penang · v37
+
+Base utilizada: v37 consolidada con Michelin KL, Redang, Perhentian y Cameron Highlands.
+
+Mejoras aplicadas:
+- Incorporado el mapa de orientación de George Town / Penang aportado por la usuaria.
+- Reordenada la lectura de George Town por capas: núcleo UNESCO, Street Art, Clan Jetties, Street of Harmony, mansiones, Air Itam y gastronomía.
+- Refinado el uso de las dos bases hoteleras: Muntri Mews para el casco histórico y 22 Macalisterz para Macalister/New Lane y salida a Langkawi.
+- Ajustado el día de Kek Lok Si + Penang Hill: funicular, reserva anticipada, visibilidad y plan B.
+- Añadidos criterios de descarte: Parque Nacional, Entopia, Batu Ferringhi y Floating Mosque quedan como extras, no como carga del itinerario.
+- Reforzadas las zonas de comida: Chulia/Kimberley, New Lane, Joo Hooi/Penang Road, Air Itam y nasi kandar.
+
+Criterio: no se ha convertido la etapa en una guía enciclopédica; se ha priorizado lo que mejora la ruta real y reduce desplazamientos innecesarios.

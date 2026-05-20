@@ -1,0 +1,13 @@
+LEEME · v37 · Aportaciones Marcando el Polo Kuala Lumpur incorporadas
+
+Cambios incorporados:
+- Saloma Link + Kampung Baru como plan nocturno opcional tras KLCC Lake Symphony, sin forzar la noche si ya se hace Heli Lounge Bar.
+- River of Life reforzado dentro del eje Masjid Jamek / Merdeka Square / Central Market.
+- Mee Tarik Restoran y Yu Yan como microparadas de Chinatown/Jalan Sultan.
+- Dharma Realm Guan Yin Sagely Monastery como almuerzo vegetariano y ligero cerca de KLCC, solo si encaja entre semana.
+- Nota operativa de movilidad: Kuala Lumpur se trabaja por bloques compactos, no por distancia teórica en Google Maps.
+
+Criterio aplicado:
+- No se cambia la estructura general de la v37.
+- Las incorporaciones son ligeras y operativas, pensadas para mejorar el viaje sin cargar más los días.
+- Se conserva la base ya validada: Michelin KL, Merdeka Square, Heli Lounge Bar y KLCC Lake Symphony.

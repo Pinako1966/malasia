@@ -1,0 +1,25 @@
+{
+  "name": "Malasia & Singapur 2026 · Iria e Iñaqui · v37 FINAL OPTIMIZADA",
+  "short_name": "Malasia 2026",
+  "description": "Guía VIP offline del viaje con documentos, mapas, gastos, operativa, inmigración y mejoras finales de rendimiento, móvil, accesibilidad, divisas y exportación PDF.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#F5EFE6",
+  "theme_color": "#2C4A3E",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "assets/icons/app-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icons/app-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

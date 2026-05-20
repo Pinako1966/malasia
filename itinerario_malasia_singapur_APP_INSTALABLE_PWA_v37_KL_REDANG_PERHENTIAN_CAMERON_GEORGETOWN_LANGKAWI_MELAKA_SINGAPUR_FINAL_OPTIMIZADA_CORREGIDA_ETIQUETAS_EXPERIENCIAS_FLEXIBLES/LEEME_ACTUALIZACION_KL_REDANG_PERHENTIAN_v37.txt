@@ -1,0 +1,4 @@
+Actualización v37 · KL/Redang/Perhentian · 18 mayo 2026
+- Kuala Lumpur: añadidas alternativas Vertigo / SkyBar al Heli Lounge; Masjid Wilayah; Brickfields como alternativa; Berjaya Times Square como plan de lluvia; refuerzo de Chinatown / Central Market / Kwai Chai Hong.
+- Redang: incorporado mapa/lectura de orientación de Pulau Redang.
+- Perhentian: priorización Besar/Kecil; Turtle Point, Shark Point y Fish Point/Teluk Keke; taxi-boat; cobertura/WhatsApp de barquero; senderos depurados; Fishing Village y mapa de orientación.

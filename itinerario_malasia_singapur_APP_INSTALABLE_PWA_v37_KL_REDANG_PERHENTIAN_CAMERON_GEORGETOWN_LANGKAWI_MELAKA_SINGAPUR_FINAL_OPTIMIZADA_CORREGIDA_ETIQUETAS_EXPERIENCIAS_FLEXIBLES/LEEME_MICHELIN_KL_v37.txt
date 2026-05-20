@@ -1,0 +1,8 @@
+v37 · Gastronomía Michelin/Bib Gourmand Kuala Lumpur
+
+Integración final sobre v37 corregida con Inmigración:
+- Nueva sección #kl-michelin dentro del programa.
+- Priorización operativa: Chinatown/Jalan Sultan y Bukit Bintang primero; Pudu como bloque potente; Bangsar/Segambut/Damansara como opciones si encajan.
+- Cada local incluye dirección, plato recomendado, encaje en programa y enlaces a mapa/ficha.
+
+Recomendación de uso: verificar horarios el mes del viaje en Google Maps/Michelin.

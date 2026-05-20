@@ -1,0 +1,7 @@
+v37 · Merdeka Square / Dataran Merdeka integrada
+
+Integración final sobre v37:
+- Merdeka Square se incorpora como parada real del Día 13 de Kuala Lumpur.
+- Orden operativo: Santa Grand Signature → Masjid Jamek → Sultan Abdul Samad Building → Merdeka Square / Dataran Merdeka → Central Market → Petaling Street → Kwai Chai Hong → Lorong Panggung → Kafe Kleptokrat → Merdeka 118 → hotel.
+- La visita se plantea como parada breve, histórica y fotográfica, no como bloque largo.
+- Se conserva el módulo Gastronomía Michelin KL ya incorporado.

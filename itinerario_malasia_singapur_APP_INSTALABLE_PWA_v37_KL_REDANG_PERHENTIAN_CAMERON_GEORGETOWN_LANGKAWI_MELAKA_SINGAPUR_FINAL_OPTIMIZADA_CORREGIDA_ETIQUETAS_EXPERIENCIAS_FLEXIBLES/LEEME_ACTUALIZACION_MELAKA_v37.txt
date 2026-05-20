@@ -1,0 +1,15 @@
+Actualización Melaka · v37
+
+Base utilizada: v37 consolidada con Michelin KL, Redang, Perhentian, Cameron Highlands, George Town / Penang y Langkawi.
+
+Mejoras aplicadas:
+- Incorporado mapa de orientación del centro histórico de Melaka con lectura por zonas: Liu Men/Jalan Tokong, Jonker/Heeren, Harmony Street, Dutch Square, St Paul/A Famosa, río y segunda capa exterior.
+- Reforzada la lógica UNESCO: Melaka se visita como ciudad histórica de intercambio multicultural, con capas malaya, portuguesa, neerlandesa, china, india y Peranakan.
+- Afinada la noche de llegada: Jonker Walk Night Market queda como prioridad real del domingo, con horario oficial viernes-domingo 18:00-00:00, pero subordinada al cansancio del traslado.
+- Ordenado el día principal: Harmony Street y Jonker temprano, Dutch Square/Stadthuys/Christ Church, St Paul’s Hill, A Famosa, Sultanate Palace si encaja, comida Nyonya, Baba & Nyonya/Heeren por la tarde y Melaka River Cruise de noche.
+- Añadido control operativo del Melaka River Cruise: 45 minutos/9 km según portal oficial, operación diaria 09:00-23:00, mejor al atardecer/noche, y no duplicarlo si ya se hizo bien.
+- Depurada la segunda capa: Kampung Morten/Villa Sentosa, Masjid Selat, Maritime Museum/Dataran Pahlawan o compras locales solo si encajan por clima, energía y logística.
+- Reforzada la gastronomía útil: Nyonya/Peranakan como comida estructural, chicken rice balls, cendol/gula melaka, kuih, pineapple tarts, satay celup y Pak Putra como alternativa informal.
+- Añadidos descartes inteligentes: evitar museos menores en cadena, no forzar trishaws/fotos turísticas, no abrir excursiones lejanas antes del traslado a Singapur.
+
+Criterio: Melaka se mantiene como pausa patrimonial compacta. Las nuevas capas mejoran la orientación y la toma de decisiones sin convertir la ciudad en una lista interminable de visitas.

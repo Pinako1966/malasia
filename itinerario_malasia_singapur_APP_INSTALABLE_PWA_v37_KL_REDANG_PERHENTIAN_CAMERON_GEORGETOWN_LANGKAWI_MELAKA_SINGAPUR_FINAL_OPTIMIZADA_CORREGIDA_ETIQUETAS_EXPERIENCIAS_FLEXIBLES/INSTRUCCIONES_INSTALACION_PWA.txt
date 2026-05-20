@@ -1,0 +1,10 @@
+APP INSTALABLE / PWA · v34 VIP FINAL
+
+Para instalarla:
+1. Descomprime el ZIP.
+2. Sirve la carpeta mediante HTTPS o localhost. Ejemplo: python -m http.server 8000
+3. Abre http://localhost:8000/index.html en Chrome/Edge o Safari.
+4. Android/Chrome: usar el botón de instalación o menú · Instalar app.
+5. iPhone/Safari: Compartir · Añadir a pantalla de inicio.
+
+Nota: por seguridad del navegador, una PWA no se instala correctamente si se abre directamente como file://.
